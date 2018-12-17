@@ -1,0 +1,126 @@
+.iframepdf {
+    max-width: 100%;
+    height: auto;
+}
+
+.delimitador{
+width:560px;
+margin:auto;
+}
+/* El contenedor con el padding-top crea el tamaño del vídeo */
+.contenedor{
+height:0px;
+width:100%;
+max-width:560px; /* Así establecemos el ancho máximo (si lo queremos) */
+padding-top:56.25%; /* Relación: 16/9 = 56.25% */
+position:relative;
+}
+/* El iframe se adapta al tamaño del contenedor */
+iframe{
+position:absolute;
+height:100%;
+width:100%;
+top:0px;
+left:0px;
+}
+
+.index {
+    background-image: url("../index.jpeg");
+    height: 100%;
+
+
+}
+
+.login {
+  background: #56ab2f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.signup {
+  background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #777;
+  overflow-x: hidden;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.content {
+  max-width: 40rem;
+  padding-left: 7rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.header-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-video video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #303952;
+  z-index: 1;
+  opacity: .85;
+}
+
+.header-content {
+  z-index: 2;
+}
+
+.header-content h1 {
+  font-size: 70px;
+  margin-bottom: 0;
+  font-family: 'Lobster', cursive;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  background: #daa520;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+@media (max-width: 960px) {
+  .content {
+    padding: 0 3rem 0 3rem;
+  }
+}
